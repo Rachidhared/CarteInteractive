@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5ebc6b70d1fda0d5aedfb0dcb61f3986 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5ebc6b70d1fda0d5aedfb0dcb61f3986" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5ebc6b70d1fda0d5aedfb0dcb61f3986 = L.map(
+                "map_5ebc6b70d1fda0d5aedfb0dcb61f3986",
+                {
+                    center: [11.7871994, 42.8001732],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eed350fcf25b92bb86ebc5bab0ae5e9d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5ebc6b70d1fda0d5aedfb0dcb61f3986);
+        
+    
+            var marker_7ea854011476424e970ddd2c6563b020 = L.marker(
+                [11.6703, 42.7333],
+                {}
+            ).addTo(map_5ebc6b70d1fda0d5aedfb0dcb61f3986);
+        
+    
+        var popup_bb9de2d01a9a52e16a4eddce263bd1ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a732b082b0639ee84696a520526b1841 = $(`<div id="html_a732b082b0639ee84696a520526b1841" style="width: 100.0%; height: 100.0%;">         Localité: Sagalou<br>         Bénéficiaires: 100<br>         Postes de santé: 3<br>         Puits: 2<br>         Personnel formé: 10     </div>`)[0];
+                popup_bb9de2d01a9a52e16a4eddce263bd1ef.setContent(html_a732b082b0639ee84696a520526b1841);
+            
+        
+
+        marker_7ea854011476424e970ddd2c6563b020.bindPopup(popup_bb9de2d01a9a52e16a4eddce263bd1ef)
+        ;
+
+        
+    
+    
+            marker_7ea854011476424e970ddd2c6563b020.bindTooltip(
+                `<div>
+                     Sagalou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e06c77e551c1323bad2f28712632de4f = L.marker(
+                [11.95, 42.7333],
+                {}
+            ).addTo(map_5ebc6b70d1fda0d5aedfb0dcb61f3986);
+        
+    
+        var popup_af324ef2fb10aa87b9409fcc74d59c92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_704e96b6b59efc37554c171f152af982 = $(`<div id="html_704e96b6b59efc37554c171f152af982" style="width: 100.0%; height: 100.0%;">         Localité: Adailou<br>         Bénéficiaires: 200<br>         Postes de santé: 5<br>         Puits: 4<br>         Personnel formé: 15     </div>`)[0];
+                popup_af324ef2fb10aa87b9409fcc74d59c92.setContent(html_704e96b6b59efc37554c171f152af982);
+            
+        
+
+        marker_e06c77e551c1323bad2f28712632de4f.bindPopup(popup_af324ef2fb10aa87b9409fcc74d59c92)
+        ;
+
+        
+    
+    
+            marker_e06c77e551c1323bad2f28712632de4f.bindTooltip(
+                `<div>
+                     Adailou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf7a8ff38798c1e6c7d80ddc9f366259 = L.marker(
+                [12.046742, 42.7623],
+                {}
+            ).addTo(map_5ebc6b70d1fda0d5aedfb0dcb61f3986);
+        
+    
+        var popup_dbe3211afbfdad03959e41a259a7e41b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c624c1a84259f35daf914899b75c3d6 = $(`<div id="html_9c624c1a84259f35daf914899b75c3d6" style="width: 100.0%; height: 100.0%;">         Localité: Dafenaytou<br>         Bénéficiaires: 400<br>         Postes de santé: 4<br>         Puits: 3<br>         Personnel formé: 1     </div>`)[0];
+                popup_dbe3211afbfdad03959e41a259a7e41b.setContent(html_9c624c1a84259f35daf914899b75c3d6);
+            
+        
+
+        marker_cf7a8ff38798c1e6c7d80ddc9f366259.bindPopup(popup_dbe3211afbfdad03959e41a259a7e41b)
+        ;
+
+        
+    
+    
+            marker_cf7a8ff38798c1e6c7d80ddc9f366259.bindTooltip(
+                `<div>
+                     Dafenaytou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e57385b3c83d54e74df4c4b1fcac466 = L.marker(
+                [12.046742, 42.7833],
+                {}
+            ).addTo(map_5ebc6b70d1fda0d5aedfb0dcb61f3986);
+        
+    
+        var popup_0872ac29ccf3e769dfc404e41c3cd93f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6628990bf90b62320989b1f354113494 = $(`<div id="html_6628990bf90b62320989b1f354113494" style="width: 100.0%; height: 100.0%;">         Localité: Guirori<br>         Bénéficiaires: 930<br>         Postes de santé: 6<br>         Puits: 2<br>         Personnel formé: 2     </div>`)[0];
+                popup_0872ac29ccf3e769dfc404e41c3cd93f.setContent(html_6628990bf90b62320989b1f354113494);
+            
+        
+
+        marker_5e57385b3c83d54e74df4c4b1fcac466.bindPopup(popup_0872ac29ccf3e769dfc404e41c3cd93f)
+        ;
+
+        
+    
+    
+            marker_5e57385b3c83d54e74df4c4b1fcac466.bindTooltip(
+                `<div>
+                     Guirori
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bbcab87259d5cd80303ba2df7697bc4 = L.marker(
+                [11.222213, 42.988666],
+                {}
+            ).addTo(map_5ebc6b70d1fda0d5aedfb0dcb61f3986);
+        
+    
+        var popup_c36dbc61764ad2f979778fab203b4138 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6756ab5bb0491be1021e8a340d30bebd = $(`<div id="html_6756ab5bb0491be1021e8a340d30bebd" style="width: 100.0%; height: 100.0%;">         Localité: BEYA-ADEY<br>         Bénéficiaires: 300<br>         Postes de santé: 9<br>         Puits: 8<br>         Personnel formé: 3     </div>`)[0];
+                popup_c36dbc61764ad2f979778fab203b4138.setContent(html_6756ab5bb0491be1021e8a340d30bebd);
+            
+        
+
+        marker_9bbcab87259d5cd80303ba2df7697bc4.bindPopup(popup_c36dbc61764ad2f979778fab203b4138)
+        ;
+
+        
+    
+    
+            marker_9bbcab87259d5cd80303ba2df7697bc4.bindTooltip(
+                `<div>
+                     BEYA-ADEY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
